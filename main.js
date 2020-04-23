@@ -162,7 +162,7 @@ function contactScroll() {
 
 let image = [ //this is an array of objects to fill the portfolio, each one refers to an image and all of the information about it
     {
-        src: "images/site.PNG",
+        src: "images/Site.PNG",
         title: "This Site",
         desc: "This site is a demonstration of all the web development skills I have thus far, it's useful for showcasing my skills, and getting to know me.",
         date: "April 2020",
@@ -183,7 +183,7 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
         link: "https://www.github.com/20402182/toDoList"
     },
     {
-        src: "images/weatherApp.PNG",
+        src: "images/WeatherApp.PNG",
         title: "Weather App",
         desc: "This weather app shows the temperature and weather in the users current location.",
         date: "April 2020",
