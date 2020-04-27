@@ -162,28 +162,28 @@ function contactScroll() {
 
 let image = [ //this is an array of objects to fill the portfolio, each one refers to an image and all of the information about it
     {
-        src: "images/Site.png",
+        src: "images/Site.PNG",
         title: "This Site",
         desc: "This site is a demonstration of all the web development skills I have thus far, it's useful for showcasing my skills, and getting to know me.",
         date: "April 2020",
         link: "https://www.github.com/20402182/Assignment2"
     },
     {
-        src: "images/QuoteGen.png",
+        src: "images/QuoteGen.PNG",
         title: "Quote Generator",
         desc: "This quote generator has a selection of random quotes and a great image background. You can also tweet these quotes through the site.",
         date: "March 2020",
         link: "https://www.github.com/20402182/RandomQuote"
     },
     {
-        src: "images/ToDoList.png",
+        src: "images/ToDoList.PNG",
         title: "To Do List",
         desc: "This to do list allows the addition of many items and crossing off the items, the items persist even when the tab is closed.",
         date: "March 2020",
         link: "https://www.github.com/20402182/toDoList"
     },
     {
-        src: "images/WeatherApp.png",
+        src: "images/WeatherApp.PNG",
         title: "Weather App",
         desc: "This weather app shows the temperature and weather in the users current location.",
         date: "April 2020",
