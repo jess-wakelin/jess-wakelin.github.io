@@ -124,7 +124,11 @@
   <section id="contact"> <!--this is the contact section of the site-->
     <div class="formTitle">
       <h1>Contact Me</h1> <!--it has a main title-->
-      <a href="mailto:wakelinjess@gmail.com?subject=I'd%20like%20to%20hire%20you">wakelinjess@gmail.com</a>
+      <div id="tool">
+        <button id="mail" onclick="copyText();">wakelinjess@gmail.com</button><!--this button calls the copy function, which places my email into the clipboard-->
+        <span id="tip"><span id="tiptext">Copy E-mail</span></span> <!--This is the tool tip text to appear above the button-->
+      </div>
+      
       </div>
     <form> <!--this is a bootstrap form-->
       <div class="form-row">
@@ -158,14 +162,32 @@
 <footer class="page-footer text-light bg-dark"> <!--this is a bootstrap footer-->
   <div class="row" id="footer">
     <div class="col-lg-9 col-md-8 col-xs-6">
-      <ul> <!--there is a short list of footer contents-->
-        <li> 
-          <p>Made by Jess Wakelin<i class="far fa-copyright"></i>2020</p>
-        </li>
-        <li>
-          <p>Northampton University</p>
-        </li>
-      </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <ul> <!--there is a short list of footer contents-->
+            <li> 
+              <p>Made by Jess Wakelin<i class="far fa-copyright"></i>2020</p>
+            </li>
+            <li>
+              <p>Northampton University</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul id="links">
+            <li>
+              <a href="https://github.com/20402182"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a href="https://codepen.io/20402182"><i class="fab fa-codepen"></i></a>
+            </li>
+            <li>
+              <a href="https://stackoverflow.com/users/13448235/jess-wakelin"><i class="fab fa-stack-overflow"></i></a>
+            </li>
+            <li><a href="https://dev.to/20402182"><i class="fab fa-dev"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="col-lg-3 col-md-4 col-xs-6" id="top-button-container">
       <button class="btn" id="top-button"> <!--this is a button in the footer which scrolls back to the top of the page-->

@@ -22,11 +22,11 @@ nav {
 #logo {transform: scale(1.2); margin-left: 10px; margin-top: 5px; transition: all .2s ease;}
 #logo:hover {transform: rotate(-20deg) scale(1.2);} /*rotate the logo on hover*/
 
-#navbar-title {margin-bottom: 8px;}
+#navbar-title {margin-bottom: 8px; color: #ffffff;}
 
 #navbar {padding-bottom: 0;}
 #logo{padding-bottom: 15px;}
-#homeLink, #contactLink, #cvLink, #portfolioLink{opacity: 0.6; color: #ffffff; padding-bottom: 14px;} /*reduce the opacity of all of the navigation links (active will have increased opacity to look brighter*/
+#homeLink, #contactLink, #cvLink, #portfolioLink{opacity: 0.6; color: #ffffff; padding-bottom: 14px; transition: all .2s ease;} /*reduce the opacity of all of the navigation links (active will have increased opacity to look brighter*/
 .nav-item:hover{box-shadow: 0px -5px 0px var(--accent) inset;} /*all links will become accented on hover*/
 
 #navbar-toggler{
@@ -40,6 +40,7 @@ nav {
 #navbar-toggler:focus{outline: none;}
 #navbar-toggler:hover{box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);}
 /*The code for the hover effect was based on code here https://www.csswand.dev/*/
+#navbar-toggler:hover .bar1, #navbar-toggler:hover .bar2, #navbar-toggler:hover .bar3{background-color: #ffffff;}
 
 .bar1, .bar2, .bar3 {
     width: 30px;
@@ -132,7 +133,11 @@ input:checked + .slider:before {
 }
 #footer li {margin: 0;}
 #footer i{margin: 5px;}
-#footer button {margin: 2rem; width: 10rem; border: solid 1px #eeeeee; color: #eeeeee;}/*Style the "back to top button*/
+#footer #links{float: right; margin-top: 2rem;}
+#footer #links li a{color: #ffffff; font-size: 28px; border-radius: 5px; margin-left: .2rem; transition: all .2s ease;}
+#footer #links li{display: inline;}
+#footer #links li a:hover{color: var(--accent);}
+#footer button {margin: 2rem; width: 10rem; border: solid 1px #ffffff; color: #ffffff;}/*Style the "back to top button*/
 #footer button:focus{box-shadow: none;}/*Removes bootstraps box shadow which exists on focus*/
 #footer button:hover{box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);}/*The code for the hover effect was based on code here https://www.csswand.dev/*/
 #top-button-container{overflow-x: visible;}/*Make sure no part of the button can be cut off by grid*/
@@ -327,14 +332,58 @@ body h1 {
     text-align: center;
 }
 
-#contact a {
+#mail {
     text-decoration: underline;
     color: var(--textTwo);
     transition: all 0.2s ease;
+    background-color: transparent;
+    border: none;
 } 
-#contact a:hover{
+#mail:hover{
     color: var(--accent);
 }
+#mail:focus {
+    outline: none;
+}
+
+#tool { /*The css related to tool and tip was based on code found here https://www.w3schools.com/howto/howto_css_tooltip.asp*/
+    position: relative;
+    display: inline-block;
+  }
+  
+  #tool #tip {
+    width: 120px;
+    background-color: var(--backingOne);
+    color: var(--textTwo);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -20%;
+    left: 140%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: all .2s ease;
+  }
+  
+  #tool #tip::after {
+    content: "";
+    position: absolute;
+    top: 38%;
+    left: -6%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--backingOne) transparent transparent;
+    transform: scale(1.4);
+  }
+  
+  #tool:hover #tip{
+    opacity: 1;
+  }
+
+
 
 #contact form {
     margin-top: 1.5rem;
@@ -394,6 +443,7 @@ body h1 {
 
 @media (max-width: 767.98px){
     #footer button{margin-top: .5rem;}
+    #footer #links {float: left; margin-top: 0;}
 }
 
 @media (max-width: 575.98px) {

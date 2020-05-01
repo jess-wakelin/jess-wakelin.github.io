@@ -98,26 +98,42 @@ function scrollHighlight() {
 
     if (isInViewport(document.getElementById("home"))) { //if the home section is in view, set the home link to 100% opacity and all others to 60%
         homeLink.style.opacity = "1";                   //then after 150ms use the collapse portfolio function
+        homeLink.style.transform = "scale(1.2)";
         portfolioLink.style.opacity = "0.6";
+        portfolioLink.style.transform = "scale(1)";
         cvLink.style.opacity = "0.6";
+        cvLink.style.transform = "scale(1)";
         contactLink.style.opacity = "0.6";
+        contactLink.style.transform = "scale(1)";
         window.setTimeout(function() {collapsePortfolio()},150);
     } else if (isInViewport(document.getElementById("portfolio"))) {
         homeLink.style.opacity = "0.6";
+        homeLink.style.transform = "scale(1)";
         portfolioLink.style.opacity = "1";
+        portfolioLink.style.transform = "scale(1.2)";
         cvLink.style.opacity = "0.6";
+        cvLink.style.transform = "scale(1)";
         contactLink.style.opacity = "0.6"; //this does not have a collapse portfolio section because the user is looking at the portfolio
+        contactLink.style.transform = "scale(1)";
     }  else if (isInViewport(document.getElementById("cv"))) {
         homeLink.style.opacity = "0.6";
+        homeLink.style.transform = "scale(1)";
         portfolioLink.style.opacity = "0.6";
+        portfolioLink.style.transform = "scale(1)";
         cvLink.style.opacity = "1";
+        cvLink.style.transform = "scale(1.2)";
         contactLink.style.opacity = "0.6";
+        contactLink.style.transform = "scale(1)";
         window.setTimeout(function() {collapsePortfolio()},150);
     } else if (isInViewport(document.getElementById("contact"))) {
         homeLink.style.opacity = "0.6";
+        homeLink.style.transform = "scale(1)";
         portfolioLink.style.opacity = "0.6";
+        portfolioLink.style.transform = "scale(1)";
         cvLink.style.opacity = "0.6";
+        cvLink.style.transform = "scale(1)";
         contactLink.style.opacity = "1";
+        contactLink.style.transform = "scale(1.2)";
         window.setTimeout(function() {collapsePortfolio()},150);
     }
 }
@@ -190,19 +206,19 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
         link: "https://www.github.com/20402182/weather"
     },
     {
-        src: "https://placeimg.com/640/480/arch",
-        title: "Image Five",
-        desc: "The description of the fifth image",
-        date: "05/01/2020",
+        src: "images/Babies.PNG",
+        title: "Baby Game",
+        desc: "This app involves up to 4 babies playing a game similar to tennis. It is made entirely from scratch, including the GUI, using the Java language.",
+        date: "April 2020",
         link: ""
     },
-    {
-        src: "https://placeimg.com/640/480/tech",
-        title: "Image Six",
-        desc: "The description of the sixth image",
-        date: "06/01/2020",
-        link: ""
-    },
+    // {
+    //     src: "https://placeimg.com/640/480/tech",
+    //     title: "Image Six",
+    //     desc: "The description of the sixth image",
+    //     date: "06/01/2020",
+    //     link: ""
+    // },
     // {
     //     src: "https://placeimg.com/640/480/arch",
     //     title: "Image Seven",
@@ -217,7 +233,7 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
     //     date: "08/01/2020",
     //     link: ""
     // },
-]; //these last two can be uncommented to see how the gallery behaves with two extra images
+]; //these last few can be uncommented to see how the gallery behaves with extra images
 
 imgCount = () => {
     return image.length;
@@ -333,3 +349,20 @@ function collapsePortfolio() { //this function closes all boxes in the portfolio
         document.getElementById("tri" + i).style.opacity = "0";
     }
 }
+
+function copyText() { //this function puts my email on the clipboard if the user clicks on it
+    navigator.clipboard.writeText("wakelinjess@gmail.com").then(function() {
+        //this happens if the write was successful
+        let tip = document.getElementById("tiptext");
+        let tipbox = document.getElementById("tip")
+        tipbox.style.transform = "scale(1.1) translateX(.4rem)";
+        tip.innerHTML = "Copied!"
+        window.setTimeout(function() {tipbox.style.transform = "scale(1) translateX(0)"}, 800);
+
+        document.getElementById("mail").addEventListener("mouseleave", function() {window.setTimeout(function() {tip.innerHTML = "Copy E-mail"}, 200)});
+
+      }, function() {
+        //this happens if the write failed
+        alert("Sorry, cannot copy.");
+      });
+} //this function was based on code found here https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/writeText
