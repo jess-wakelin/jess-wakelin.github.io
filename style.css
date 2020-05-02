@@ -474,7 +474,6 @@ body h1 {
 } /*this makes the scrollbar track the same colour as the site background and have a width of 5px*/
 ::-webkit-scrollbar-thumb {
     background-color: var(--backingTwo);
-    transition: all .2 ease;
 }/*this makes the track piece or thumb have a colour contrasting the thumb colour*/
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--accent);
