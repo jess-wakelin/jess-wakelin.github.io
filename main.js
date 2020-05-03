@@ -206,7 +206,7 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
         link: "https://www.github.com/20402182/weather"
     },
     {
-        src: "images/Babies.PNG",
+        src: "images/Babies.png",
         title: "Baby Game",
         desc: "This app involves up to 4 babies playing a game similar to tennis. It is made entirely from scratch, including the GUI, using the Java language.",
         date: "April 2020",
