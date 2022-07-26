@@ -10,9 +10,9 @@ This portfolio started as a university assignment but has bene maintained and up
     - the contact form is an illusion for the purpose of the assignment, this projects original goal
     - replace the form with more prominent socials and email
 
-1. update experience section
-    - include new skills and education
-    - rewrite personal paragraph
+1. ~~update experience section~~
+    - ~~include new skills and education~~
+    - ~~rewrite personal paragraph~~
     
 1. update portfolio
     - include new projects that have been undertaken
@@ -25,8 +25,8 @@ This portfolio started as a university assignment but has bene maintained and up
 1. small things
     - ~~footer copyright~~ 
     - bigger socials means small ones are unnecessary
-    - copyright date auto update
-    - not studying - graduated
+    - ~~copyright date auto update~~
+    - ~~not studying - graduated~~
     - change dark mode to default
     - change switch to be more intuitive
     
