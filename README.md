@@ -23,7 +23,7 @@ This portfolio started as a university assignment but has bene maintained and up
         - bash blackjack game
 
 1. small things
-    - footer copyright
+    - ~~footer copyright~~ 
     - bigger socials means small ones are unnecessary
     - copyright date auto update
     - not studying - graduated
