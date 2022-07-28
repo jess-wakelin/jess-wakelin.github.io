@@ -5,10 +5,11 @@ This portfolio started as a university assignment but has bene maintained and up
 
 ## Todo list
 
-1. alter "CONTACT ME" section
-    - the section doesn't work as it seems
-    - the contact form is an illusion for the purpose of the assignment, this projects original goal
-    - replace the form with more prominent socials and email
+1. ~~alter "CONTACT ME" section~~
+    - ~~the section doesn't work as it seems~~
+    - ~~the contact form is an illusion for the purpose of the assignment, this projects original goal~~
+    - ~~replace the form with more prominent socials and email~~
+    - done with flexbox, try with bootstrap styles?
 
 1. ~~update experience section~~
     - ~~include new skills and education~~
@@ -29,6 +30,7 @@ This portfolio started as a university assignment but has bene maintained and up
     - ~~not studying - graduated~~
     - change dark mode to default
     - change switch to be more intuitive
+    - change titles to be bigger
     
 
 1. testing

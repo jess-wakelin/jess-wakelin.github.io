@@ -1,4 +1,4 @@
-:root{
+:root {
     --fullBackground: #ffffff;
     --backingOne: #c5cae9;
     --backingTwo: #303f9f;
@@ -7,11 +7,22 @@
     --accent: #7c4dff;
     --bodyFont: 'Roboto';
     --headFont: 'Rubik';
-}/*Defines variables of font and colour to be used, this allows for easy changing of all colours*/
+}
 
-html {scroll-behavior: smooth;} /*animates the scroll between sections when the navigation is used*/
+/*Defines variables of font and colour to be used, this allows for easy changing of all colours*/
 
-body {background-color: var(--fullBackground); transition: all .2s ease;} /*Colours the background of the body, so that it can be changed, animates this change*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*animates the scroll between sections when the navigation is used*/
+
+body {
+    background-color: var(--fullBackground);
+    transition: all .2s ease;
+}
+
+/*Colours the background of the body, so that it can be changed, animates this change*/
 
 /*Styling of navigation*/
 nav {
@@ -19,72 +30,139 @@ nav {
     text-transform: uppercase;
 }
 
-#logo {transform: scale(1.2); margin-left: 10px; margin-top: 5px; transition: all .2s ease;}
-#logo:hover {transform: rotate(-20deg) scale(1.2);} /*rotate the logo on hover*/
+#logo {
+    transform: scale(1.2);
+    margin-left: 10px;
+    margin-top: 5px;
+    transition: all .2s ease;
+}
 
-#navbar-title {margin-bottom: 8px; color: #ffffff;}
+#logo:hover {
+    transform: rotate(-20deg) scale(1.2);
+}
 
-#navbar {padding-bottom: 0;}
-#logo{padding-bottom: 15px;}
-#homeLink, #contactLink, #cvLink, #portfolioLink{opacity: 0.6; color: #ffffff; padding-bottom: 14px; transition: all .2s ease;} /*reduce the opacity of all of the navigation links (active will have increased opacity to look brighter*/
-.nav-item:hover{box-shadow: 0px -5px 0px var(--accent) inset;} /*all links will become accented on hover*/
+/*rotate the logo on hover*/
 
-#navbar-toggler{
+#navbar-title {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+#navbar {
+    padding-bottom: 0;
+}
+
+#logo {
+    padding-bottom: 15px;
+}
+
+#homeLink,
+#contactLink,
+#cvLink,
+#portfolioLink {
+    opacity: 0.6;
+    color: #ffffff;
+    padding-bottom: 14px;
+    transition: all .2s ease;
+}
+
+/*reduce the opacity of all of the navigation links (active will have increased opacity to look brighter*/
+.nav-item:hover {
+    box-shadow: 0px -5px 0px var(--accent) inset;
+}
+
+/*all links will become accented on hover*/
+
+#navbar-toggler {
     border: none;
     font-size: 1.5rem;
     transition: .5s ease;
     margin-top: 0px;
     padding-top: 0;
     margin-bottom: 6px;
-}/*style the navbar collapse button (hamburger)*/
-#navbar-toggler:focus{outline: none;}
-#navbar-toggler:hover{box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);}
-/*The code for the hover effect was based on code here https://www.csswand.dev/*/
-#navbar-toggler:hover .bar1, #navbar-toggler:hover .bar2, #navbar-toggler:hover .bar3{background-color: #ffffff;}
+}
 
-.bar1, .bar2, .bar3 {
+/*style the navbar collapse button (hamburger)*/
+#navbar-toggler:focus {
+    outline: none;
+}
+
+#navbar-toggler:hover {
+    box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);
+}
+
+/*The code for the hover effect was based on code here https://www.csswand.dev/*/
+#navbar-toggler:hover .bar1,
+#navbar-toggler:hover .bar2,
+#navbar-toggler:hover .bar3 {
+    background-color: #ffffff;
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 30px;
     height: 4px;
     background-color: #aaaaaa;
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 5px;
-} /*This refers to the bars that make up the hamburger button*/
-  
+}
+
+/*This refers to the bars that make up the hamburger button*/
+
 .active .bar1 {
     -webkit-transform: rotate(-45deg) translate(-7px, 6px);
     transform: rotate(-45deg) translate(-7px, 6px);
-} /*animate the first bar when the collapsable is open*/
-  
-.active .bar2 {opacity: 0;} /*animate the second bar when the collapsable is open*/
-  
+}
+
+/*animate the first bar when the collapsable is open*/
+
+.active .bar2 {
+    opacity: 0;
+}
+
+/*animate the second bar when the collapsable is open*/
+
 .active .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px); /*animate the third bar when the collapsable is open*/
-}/*all together these bars go from forming a hamburger to an X to signify "close"*/
- /*The css for the animation of the bars was based on code here https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+    transform: rotate(45deg) translate(-8px, -8px);
+    /*animate the third bar when the collapsable is open*/
+}
+
+/*all together these bars go from forming a hamburger to an X to signify "close"*/
+/*The css for the animation of the bars was based on code here https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
 /*navbar-toggler refers to the "hamburger" only visible when at small viewport widths, change some of the bootstrap items*/
 /*The code for the hover effect was based on code here https://www.csswand.dev/*/
-#navbarItems {transition: all 0.5s ease; padding-bottom: 0;}
+#navbarItems {
+    transition: all 0.5s ease;
+    padding-bottom: 0;
+}
+
 /*End of navigation styling*/
 
 
 /*The css surrounding the switch and slider was based on the css found here https://www.w3schools.com/howto/howto_css_switch.asp*/
-.switch { /*This styles the day-night switch*/
+.switch {
+    /*This styles the day-night switch*/
     position: relative;
     display: inline-block;
     width: 50px;
     height: 24px;
-    margin: 4px;    
+    margin: 4px;
     margin-top: 8px;
-} 
+}
+
 .switch input {
-    opacity: 0; /*Hides the original checkbox input that the switch overwrites*/
+    opacity: 0;
+    /*Hides the original checkbox input that the switch overwrites*/
     width: 0;
     height: 0;
 }
+
 .slider {
-    position: absolute; /*position and colour the slider of the switch*/
+    position: absolute;
+    /*position and colour the slider of the switch*/
     cursor: pointer;
     top: 0;
     left: 0;
@@ -93,8 +171,10 @@ nav {
     background-color: #eeeeee;
     transition: .5s;
 }
+
 .slider:before {
-    position: absolute; /*position and style the slider handle*/
+    position: absolute;
+    /*position and style the slider handle*/
     content: "";
     height: 16px;
     width: 16px;
@@ -103,21 +183,44 @@ nav {
     background-color: #343840;
     transition: .5s;
 }
-input:checked + .slider {
-    background-color: #212121; /*change the colour of the slider background when "on"*/
+
+input:checked+.slider {
+    background-color: #212121;
+    /*change the colour of the slider background when "on"*/
 }
-input:checked + .slider:before {
-  transform: translateX(26px); /*move the slider handle to the right to turn on*/
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+    /*move the slider handle to the right to turn on*/
 }
+
 .slider.round {
-  border-radius: 34px; /*make the slider edges rounded*/
-} 
-.slider.round:before {
-  border-radius: 50%;
+    border-radius: 34px;
+    /*make the slider edges rounded*/
 }
-#navbarItems li:last-child {margin-left: 1rem;} /*Move the slider away from rest of the list*/
-#themeControls i {margin-top: 5px; color: #ffeb3b; transition: all .4s ease; opacity: 0;} /*Style the icons next to the slider*/
-.slider:hover{box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);}/*change the background of the slider on hover*/
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#navbarItems li:last-child {
+    margin-left: 1rem;
+}
+
+/*Move the slider away from rest of the list*/
+#themeControls i {
+    margin-top: 5px;
+    color: #ffeb3b;
+    transition: all .4s ease;
+    opacity: 0;
+}
+
+/*Style the icons next to the slider*/
+.slider:hover {
+    box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);
+}
+
+/*change the background of the slider on hover*/
 /*The code for the hover effect was based on code here https://www.csswand.dev/*/
 /*End of slider*/
 
@@ -127,46 +230,96 @@ input:checked + .slider:before {
     margin-bottom: 0;
     font-family: var(--bodyFont), sans-serif;
 }
+
 #footer ul {
     margin-top: 1rem;
     list-style-type: none;
 }
-#footer li {margin: 0;}
-#footer i{margin: 5px;}
-#footer #links{float: right; margin-top: 2rem;}
-#footer #links li a{color: #ffffff; font-size: 28px; border-radius: 5px; margin-left: .2rem; transition: all .2s ease;}
-#footer #links li{display: inline;}
-#footer #links li a:hover{color: var(--accent);}
-#footer button {margin: 2rem; width: 10rem; border: solid 1px #ffffff; color: #ffffff;}/*Style the "back to top button*/
-#footer button:focus{box-shadow: none;}/*Removes bootstraps box shadow which exists on focus*/
-#footer button:hover{box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);}/*The code for the hover effect was based on code here https://www.csswand.dev/*/
-#top-button-container{overflow-x: visible;}/*Make sure no part of the button can be cut off by grid*/
+
+#footer li {
+    margin: 0;
+}
+
+#footer i {
+    margin: 5px;
+}
+
+#footer #links {
+    float: right;
+    margin-top: 2rem;
+}
+
+#footer #links li a {
+    color: #ffffff;
+    font-size: 28px;
+    border-radius: 5px;
+    margin-left: .2rem;
+    transition: all .2s ease;
+}
+
+#footer #links li {
+    display: inline;
+}
+
+#footer #links li a:hover {
+    color: var(--accent);
+}
+
+#footer button {
+    margin: 2rem;
+    width: 10rem;
+    border: solid 1px #ffffff;
+    color: #ffffff;
+}
+
+/*Style the "back to top button*/
+#footer button:focus {
+    box-shadow: none;
+}
+
+/*Removes bootstraps box shadow which exists on focus*/
+#footer button:hover {
+    box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);
+}
+
+/*The code for the hover effect was based on code here https://www.csswand.dev/*/
+#top-button-container {
+    overflow-x: visible;
+}
+
+/*Make sure no part of the button can be cut off by grid*/
 /*End of styling of the footer*/
 
 body h1 {
-    text-transform: uppercase; 
-    text-align: center; 
+    text-transform: uppercase;
+    text-align: center;
     color: var(--textTwo);
     margin-bottom: 1rem;
     font-family: var(--headFont), sans-serif;
-}/*Styles all of the h1 in the body to be uppercase and a changable font colour*/
+}
+
+/*Styles all of the h1 in the body to be uppercase and a changable font colour*/
 
 /*Styling of the landing section*/
 #home {
     background-color: #303f9f;
     margin: 1rem;
     margin-top: 5rem;
-    height: calc(100vh - 6rem); /*makes the height of the home section to always be screenheight - height of navbar - margins*/
+    height: calc(100vh - 6rem);
+    /*makes the height of the home section to always be screenheight - height of navbar - margins*/
     text-align: center;
     font-family: var(--bodyFont), sans-serif;
-}/*style the home box*/
+}
+
+/*style the home box*/
 
 #homeContainer h1 {
     font-size: 5rem;
     text-transform: none;
-    transform: translateY(calc((((100vh - 6rem) * .5) - 5rem))); /*makes the text always sit in the middle of the home section*/
+    transform: translateY(calc((((100vh - 6rem) * .5) - 5rem)));
+    /*makes the text always sit in the middle of the home section*/
     color: #ffffff;
-    filter:drop-shadow(5px 5px var(--accent));
+    filter: drop-shadow(5px 5px var(--accent));
 
 }
 
@@ -174,12 +327,20 @@ body h1 {
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 2rem;
-    transform: translateY(calc((((100vh - 6rem) * .5) - 5rem))); /*makes the text always sit in the middle of the home section*/
+    transform: translateY(calc((((100vh - 6rem) * .5) - 5rem)));
+    /*makes the text always sit in the middle of the home section*/
     color: #ffffff;
-    filter:drop-shadow(3px 3px var(--accent));
+    filter: drop-shadow(3px 3px var(--accent));
 }
 
-#homeContainer {height: 100%; background-image: url(https://source.unsplash.com/2100x900/?motherboard,light); background-position: center; background-size: cover;}/*puts a background image into the home section to fill the container*/
+#homeContainer {
+    height: 100%;
+    background-image: url(https://source.unsplash.com/2100x900/?motherboard,light);
+    background-position: center;
+    background-size: cover;
+}
+
+/*puts a background image into the home section to fill the container*/
 /*End of styling of the landing section*/
 
 /*Styling of portfolio section*/
@@ -197,8 +358,10 @@ body h1 {
 .img-fluid {
     border-radius: 5px;
     transition: .2s ease;
-    
-} /*extra styling to go with bootstraps fluid images*/
+
+}
+
+/*extra styling to go with bootstraps fluid images*/
 
 .col {
     margin-top: 1rem;
@@ -215,67 +378,91 @@ body h1 {
     text-align: center;
     color: #ffffff;
     font-size: 2rem;
-}/*Style the text which appears over the gallery images when hovering*/
+}
+
+/*Style the text which appears over the gallery images when hovering*/
 
 .col:hover .img-fluid {
     filter: grayscale(1);
     filter: brightness(0.2);
-} /*Changes the image to grey when hovering*/
+}
 
-.col:hover .middle {opacity: 1;}
+/*Changes the image to grey when hovering*/
+
+.col:hover .middle {
+    opacity: 1;
+}
 
 #gallery button {
     border: none;
     background: none;
 }
 
-#gallery button:focus{outline: none;}
+#gallery button:focus {
+    outline: none;
+}
 
 .triangle-up {
     margin-top: 5px;
-	width: 0;
-	height: 0;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
     border-bottom: 15px solid var(--backingOne);
     margin-bottom: 0;
     padding-bottom: 0;
     opacity: 0;
     margin-left: 4rem;
-    transition: all .2s ease; 
-} /*this is a pointer to show which image is being referred to by the description box below*/
- /*The .triangle-up style was based on css found here https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-up*/
+    transition: all .2s ease;
+}
+
+/*this is a pointer to show which image is being referred to by the description box below*/
+/*The .triangle-up style was based on css found here https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_triangle-up*/
 
 .descBox {
     overflow-x: visible;
     background-color: var(--backingOne);
     color: var(--textTwo);
     font-family: var(--bodyFont), sans-serif;
-} /*style the box which houses portfolio image descriptions*/
+}
+
+/*style the box which houses portfolio image descriptions*/
 
 .descText {
     margin-left: 11%;
     transition: all 0.2s ease;
     overflow-y: hidden;
     max-height: 0;
-} /*style the text container within the box*/
+}
 
-.descText p{font-size: 20px;} /*style the text itself*/
+/*style the text container within the box*/
+
+.descText p {
+    font-size: 20px;
+}
+
+/*style the text itself*/
 
 .descBox h2 {
     font-family: var(--headFont), sans-serif;
     padding-top: 1rem;
 }
 
-#gallery .icon {text-align: right;}
+#gallery .icon {
+    text-align: right;
+}
 
-#gallery .icon a{
+#gallery .icon a {
     font-size: 28px;
     color: var(--textTwo);
     transition: all .2s ease;
     margin-right: 11%;
 }
-#gallery .icon a:hover {color: var(--accent);}
+
+#gallery .icon a:hover {
+    color: var(--accent);
+}
+
 /*icon refers to the github icon at the end of some descriptions which links to their github page*/
 /*End of styling of the portfolio*/
 
@@ -283,7 +470,9 @@ body h1 {
 #cv {
     color: var(--textTwo);
     background-color: var(--backingOne);
-} /*fill in a background colour to distinguish from adjacent sections*/
+}
+
+/*fill in a background colour to distinguish from adjacent sections*/
 
 #cvContainer {
     margin: 5rem;
@@ -304,7 +493,7 @@ body h1 {
     font-size: 18px;
 }
 
-#cv ul{
+#cv ul {
     list-style-type: none;
     margin-left: -2rem;
 }
@@ -313,18 +502,20 @@ body h1 {
     text-decoration: underline;
     color: var(--textTwo);
     transition: all 0.2s ease;
-} 
-#cv a:hover{
+}
+
+#cv a:hover {
     color: var(--accent);
 }
+
 /*end of cv styling (most here is done by bootstrap)*/
- 
-/*start of contact form styling*/
+
+/*start of contact section styling*/
 #contact {
     margin: 5rem;
 }
 
-#contact h1{
+#contact h1 {
     margin-bottom: 0;
 }
 
@@ -338,20 +529,24 @@ body h1 {
     transition: all 0.2s ease;
     background-color: transparent;
     border: none;
-} 
-#mail:hover{
+    font-size: 2rem;
+}
+
+#mail:hover {
     color: var(--accent);
 }
+
 #mail:focus {
     outline: none;
 }
 
-#tool { /*The css related to tool and tip was based on code found here https://www.w3schools.com/howto/howto_css_tooltip.asp*/
+#tool {
+    /*The css related to tool and tip was based on code found here https://www.w3schools.com/howto/howto_css_tooltip.asp*/
     position: relative;
     display: inline-block;
-  }
-  
-  #tool #tip {
+}
+
+#tool #tip {
     width: 120px;
     background-color: var(--backingOne);
     color: var(--textTwo);
@@ -360,14 +555,14 @@ body h1 {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: -20%;
+    bottom: -0%;
     left: 140%;
-    margin-left: -60px;
+    margin-left: -110px;
     opacity: 0;
     transition: all .2s ease;
-  }
-  
-  #tool #tip::after {
+}
+
+#tool #tip::after {
     content: "";
     position: absolute;
     top: 38%;
@@ -377,46 +572,45 @@ body h1 {
     border-style: solid;
     border-color: transparent var(--backingOne) transparent transparent;
     transform: scale(1.4);
-  }
-  
-  #tool:hover #tip{
+}
+
+#tool:hover #tip {
     opacity: 1;
-  }
-
-
-
-#contact form {
-    margin-top: 1.5rem;
 }
 
-#contact form label {
-    color: var(--textTwo);
+#contact #links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
 }
 
-.form-control {
-    transition: all 0.2s ease;
-    background-color: var(--backingOne);
+#contact #links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: var(--textTwo);
-    border: none;
+    padding: 5rem;
 }
-.form-control:focus{
-    background-color: var(--backingOne);
-    color: var(--textTwo);
-    box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);
-}/*The code for the hover effect was based on code here https://www.csswand.dev/*/
-.form-control::placeholder {
-    color: var(--textTwo);
-    opacity: .8;
-} /*form control refers to bootstraps form fields*/
 
-#submitButton {
-    border: solid 1px var(--textTwo);
-    background-color: var(--fullBackground);
-    color: var(--textTwo);
+#contact #links a:hover,
+#contact #links a:focus {
+    color: var(--accent);
+    text-decoration: none;
 }
-#submitButton:hover {box-shadow: 1px 1px var(--accent), 2px 2px var(--accent), 3px 3px var(--accent);}
-/*The code for the hover effect was based on code here https://www.csswand.dev/*/
-/*End of contact form styling*/
+
+#contact #links span {
+    font-size: 3rem;
+}
+
+#contact #links i {
+    font-size: 8rem;
+}
+
+
+
+/*End of contact section styling*/
 
 /*Media queries (bootstaps css also includes some that occur at the same widths as these*/
 @media (max-width: 1044px) {
@@ -433,48 +627,91 @@ body h1 {
         width: 0;
         overflow: hidden;
     }
-    #navbar-title {display: none;}
-    #navbarItems ul {float: right;}
-    #navbarItems li {margin-right: 1.4rem; width: 8rem;}
-    #navbarItems li:last-child {margin-right: 0; padding-bottom: 1rem;}
-    #footer button{margin-right: 1rem;}
-    .descText{margin-left: 8%;}
+
+    #navbar-title {
+        display: none;
+    }
+
+    #navbarItems ul {
+        float: right;
+    }
+
+    #navbarItems li {
+        margin-right: 1.4rem;
+        width: 8rem;
+    }
+
+    #navbarItems li:last-child {
+        margin-right: 0;
+        padding-bottom: 1rem;
+    }
+
+    #footer button {
+        margin-right: 1rem;
+    }
+
+    .descText {
+        margin-left: 8%;
+    }
 }
 
-@media (max-width: 767.98px){
-    #footer button{margin-top: .5rem;}
-    #footer #links {float: left; margin-top: 0;}
+@media (max-width: 767.98px) {
+    #footer button {
+        margin-top: .5rem;
+    }
+
+    #footer #links {
+        float: left;
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 575.98px) {
-    #cvContainer, #contact {
+
+    #cvContainer,
+    #contact {
         margin: 2rem;
     }
+
     #footer {
         margin-left: 5px;
     }
-    .descText{margin-left: 5%;}
-    #gallery img{margin-top: 0;}
+
+    .descText {
+        margin-left: 5%;
+    }
+
+    #gallery img {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 400px) {
     .descText h2 {
         font-size: 20px;
     }
-    .descText p{
+
+    .descText p {
         font-size: 16px;
     }
 }
+
 /*end of media queries*/
 
 /*this styles the scrollbar*/
 ::-webkit-scrollbar {
     background-color: var(--fullBackground);
     width: 5px;
-} /*this makes the scrollbar track the same colour as the site background and have a width of 5px*/
+}
+
+/*this makes the scrollbar track the same colour as the site background and have a width of 5px*/
 ::-webkit-scrollbar-thumb {
     background-color: var(--backingTwo);
-}/*this makes the track piece or thumb have a colour contrasting the thumb colour*/
+}
+
+/*this makes the track piece or thumb have a colour contrasting the thumb colour*/
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--accent);
-}/*set thumb to have a hover effect*/
+}
+
+/*set thumb to have a hover effect*/
