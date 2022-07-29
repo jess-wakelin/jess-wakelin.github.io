@@ -657,6 +657,10 @@ body h1 {
         padding-bottom: 1rem;
     }
 
+    .nav-link.nav-active {
+        margin-right: 11px;
+    }
+
     #footer button {
         margin-right: 1rem;
     }
