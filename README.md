@@ -15,13 +15,13 @@ This portfolio started as a university assignment but has bene maintained and up
     - ~~include new skills and education~~
     - ~~rewrite personal paragraph~~
     
-1. update portfolio
-    - include new projects that have been undertaken
+1. ~~update portfolio~~
+    - ~~include new projects that have been undertaken~~
         - unity projects
-        - web development (vue project, php projects)
-        - C# netcat clone
-        - java car rental system
-        - bash blackjack game
+        - web development (vue project, ~~php projects~~)
+        - ~~C# netcat clone~~
+        - ~~java car rental system~~
+        - ~~bash blackjack game~~
 
 1. small things
     - ~~footer copyright~~ 
@@ -31,8 +31,10 @@ This portfolio started as a university assignment but has bene maintained and up
     - change dark mode to default
     - change switch to be more intuitive
     - change titles to be bigger
-    - improve splash picture (sometimes API gives bad picture)
+    - ~~improve splash picture (sometimes API gives bad picture)~~
     - nav accent with upscaled label is out of line on hamburger menu
+    - redo portfolio pictures for better quality
+    - increase size of github icon in portfolio
     
 
 1. testing

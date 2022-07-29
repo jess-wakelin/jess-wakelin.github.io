@@ -181,36 +181,36 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
     {
         src: "images/Site.PNG",
         title: "This Site",
-        desc: "This site is a demonstration of all the web development skills I have thus far, it's useful for showcasing my skills, and getting to know me.",
-        date: "April 2020",
+        desc: "This site is a demonstration of all the web development skills I have thus far, it's useful for showcasing my skills, and getting to know me.<br> The site is made using vanilla HTML and JS and bootstrap CSS with various customisations",
+        date: "April 2020, Updated July 2022",
         link: "https://www.github.com/20402182/Assignment2"
     },
     {
-        src: "images/QuoteGen.PNG",
-        title: "Quote Generator",
-        desc: "This quote generator has a selection of random quotes and a great image background. You can also tweet these quotes through the site.",
-        date: "March 2020",
-        link: "https://www.github.com/20402182/RandomQuote"
+        src: "images/gameSite.png",
+        title: "E-commerce site",
+        desc: "This project is a demonstration of a possible e-commerce site selling video games <br> Built by a team of 4, with me as project leader, from requirements analysis, through design, development and testing, using a PHP and mySQL backend, a HTML, SASS, JS frontend and PHPUnit testing <br> This site demonstrates the pinnacle of my fullstack web development abilities.",
+        date: "May 2021",
+        link: ""
     },
     {
-        src: "images/ToDoList.PNG",
-        title: "To Do List",
-        desc: "This to do list allows the addition of many items and crossing off the items, the items persist even when the tab is closed.",
-        date: "March 2020",
-        link: "https://www.github.com/20402182/toDoList"
+        src: "images/carRental.png",
+        title: "Vehicle Rental Management",
+        desc: "This app was designed to manage a vehicle rental system. This project follows MVC architecture, implements desktop native GUI and utilises data serialisation, all using Java.",
+        date: "May 2021",
+        link: ""
     },
     {
-        src: "images/WeatherApp.PNG",
-        title: "Weather App",
-        desc: "This weather app shows the temperature and weather in the users current location.",
-        date: "April 2020",
-        link: "https://www.github.com/20402182/weather"
+        src: "images/chatApp.png",
+        title: "Chat app",
+        desc: "This app allows users to connect via IP address and send text-based messages, this can be done over TCP or UDP protocols, demonstrating an understanding of transport layer networking and interface design using C#.",
+        date: "January 2021",
+        link: ""
     },
     {
-        src: "images/Babies.png",
-        title: "Baby Game",
-        desc: "This app involves up to 4 babies playing a game similar to tennis. It is made entirely from scratch, including the GUI, using the Java language.",
-        date: "April 2020",
+        src: "images/blackjack.png",
+        title: "Blackjack game",
+        desc: "This game was designed to work in a BASH command line, multiple players can bet arbitrary currency on a game of blackjack. This demonstrates a great understanding of BASH scripting.",
+        date: "May 2021",
         link: ""
     },
     // {

@@ -434,6 +434,7 @@ body h1 {
 
 .descText {
     margin-left: 11%;
+    margin-right: 11%;
     transition: all 0.2s ease;
     overflow-y: hidden;
     max-height: 0;
