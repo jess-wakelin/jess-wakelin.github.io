@@ -41,3 +41,7 @@ This portfolio started as a university assignment but has bene maintained and up
     - redo testing toward end of this list
     - improve responsiveness
     - clean up older code
+
+1. known bugs
+    - browsing portfolio starting with first one in a line is fine   
+    starting with 2nd or 3rd in a line means that the portfolio cannot be closed
