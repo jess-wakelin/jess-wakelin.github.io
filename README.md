@@ -19,7 +19,7 @@ This portfolio started as a university assignment but has bene maintained and up
     - increase size of github icon in portfolio
     
 1.  nav accent with upscaled label is out of line on hamburger menu
-    - redo how the styles are altered in js so adding a check for hamburger is easier
+    - ~~redo how the styles are altered in js so adding a check for hamburger is easier~~
 
 1. testing
     - redo testing toward end of this list

@@ -98,43 +98,27 @@ function scrollHighlight() {
     let contactLink = document.getElementById("contactLink");
 
     if (isInViewport(document.getElementById("home"))) { //if the home section is in view, set the home link to 100% opacity and all others to 60%
-        homeLink.style.opacity = "1";                   //then after 150ms use the collapse portfolio function
-        homeLink.style.transform = "scale(1.2)";
-        portfolioLink.style.opacity = "0.6";
-        portfolioLink.style.transform = "scale(1)";
-        cvLink.style.opacity = "0.6";
-        cvLink.style.transform = "scale(1)";
-        contactLink.style.opacity = "0.6";
-        contactLink.style.transform = "scale(1)";
+        homeLink.classList.add("nav-active");            //then after 150ms use the collapse portfolio function
+        portfolioLink.classList.remove("nav-active");
+        cvLink.classList.remove("nav-active");
+        contactLink.classList.remove("nav-active");
         window.setTimeout(function () { collapsePortfolio() }, 150);
     } else if (isInViewport(document.getElementById("portfolio"))) {
-        homeLink.style.opacity = "0.6";
-        homeLink.style.transform = "scale(1)";
-        portfolioLink.style.opacity = "1";
-        portfolioLink.style.transform = "scale(1.2)";
-        cvLink.style.opacity = "0.6";
-        cvLink.style.transform = "scale(1)";
-        contactLink.style.opacity = "0.6"; //this does not have a collapse portfolio section because the user is looking at the portfolio
-        contactLink.style.transform = "scale(1)";
+        homeLink.classList.remove("nav-active");            //then after 150ms use the collapse portfolio function
+        portfolioLink.classList.add("nav-active");
+        cvLink.classList.remove("nav-active");
+        contactLink.classList.remove("nav-active"); //this does not have a collapse portfolio section because the user is looking at the portfolio
     } else if (isInViewport(document.getElementById("cv"))) {
-        homeLink.style.opacity = "0.6";
-        homeLink.style.transform = "scale(1)";
-        portfolioLink.style.opacity = "0.6";
-        portfolioLink.style.transform = "scale(1)";
-        cvLink.style.opacity = "1";
-        cvLink.style.transform = "scale(1.2)";
-        contactLink.style.opacity = "0.6";
-        contactLink.style.transform = "scale(1)";
+        homeLink.classList.remove("nav-active");
+        portfolioLink.classList.remove("nav-active");
+        cvLink.classList.add("nav-active");
+        contactLink.classList.remove("nav-active");
         window.setTimeout(function () { collapsePortfolio() }, 150);
     } else if (isInViewport(document.getElementById("contact"))) {
-        homeLink.style.opacity = "0.6";
-        homeLink.style.transform = "scale(1)";
-        portfolioLink.style.opacity = "0.6";
-        portfolioLink.style.transform = "scale(1)";
-        cvLink.style.opacity = "0.6";
-        cvLink.style.transform = "scale(1)";
-        contactLink.style.opacity = "1";
-        contactLink.style.transform = "scale(1.2)";
+        homeLink.classList.remove("nav-active");
+        portfolioLink.classList.remove("nav-active");
+        cvLink.classList.remove("nav-active");
+        contactLink.classList.add("nav-active");
         window.setTimeout(function () { collapsePortfolio() }, 150);
     }
 }
