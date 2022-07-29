@@ -13,7 +13,7 @@ This portfolio started as a university assignment but has bene maintained and up
     - bigger socials means small ones are unnecessary
     - change dark mode to default
     - change switch to be more intuitive
-    - change titles to be bigger
+    - ~~change titles to be bigger~~
     - nav accent with upscaled label is out of line on hamburger menu
     - redo portfolio pictures for better quality
     - increase size of github icon in portfolio
