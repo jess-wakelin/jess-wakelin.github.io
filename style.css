@@ -316,9 +316,11 @@ body h1 {
 #homeContainer h1 {
     font-size: 5rem;
     text-transform: none;
+    font-weight: bolder;
     transform: translateY(calc((((100vh - 6rem) * .5) - 5rem)));
     /*makes the text always sit in the middle of the home section*/
     color: #ffffff;
+    -webkit-text-stroke: 1px #000;
     filter: drop-shadow(5px 5px var(--accent));
 
 }
@@ -326,16 +328,18 @@ body h1 {
 #homeContainer p {
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
     transform: translateY(calc((((100vh - 6rem) * .5) - 5rem)));
     /*makes the text always sit in the middle of the home section*/
     color: #ffffff;
+    -webkit-text-stroke: .5px #000;
     filter: drop-shadow(3px 3px var(--accent));
 }
 
 #homeContainer {
     height: 100%;
-    background-image: url(https://source.unsplash.com/2100x900/?motherboard,light);
+    background-image: url(https://source.unsplash.com/2100x900?electronic-chip);
     background-position: center;
     background-size: cover;
 }

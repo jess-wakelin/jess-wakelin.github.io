@@ -42,7 +42,6 @@ window.onload = function () { //causes all the code in this section to run when 
             root.style.setProperty("--backingTwo", "#303f9f");
             root.style.setProperty("--textOne", "#ffffff");
             root.style.setProperty("--textTwo", "#212121"); //this individually sets all variables to their default values
-            document.getElementById("homeContainer").style.backgroundImage = "url(https://source.unsplash.com/2100x900/?motherboard,light)"; //sets the background image of the landing section to something light (default)
             sun.style.opacity = "1"; //turn on the "light" icon
             moon.style.opacity = "0"; //make sure the "dark" icon is off
             window.setTimeout(function () { sun.style.opacity = "0" }, 800); //after the animation for the "light" icon is finished, turn it off again
@@ -59,7 +58,6 @@ window.onload = function () { //causes all the code in this section to run when 
         root.style.setProperty("--backingTwo", "#c5cae9"); //in this section, backingOnes default is given to backingTwo and vice versa
         root.style.setProperty("--textOne", "#212121");//same with the text values
         root.style.setProperty("--textTwo", "#ffffff");
-        document.getElementById("homeContainer").style.backgroundImage = "url(https://source.unsplash.com/2100x900/?motherboard,black)";//the landing image is set to something dark
         moon.style.opacity = "1";
         sun.style.opacity = "0";
         window.setTimeout(function () { moon.style.opacity = "0" }, 800);
