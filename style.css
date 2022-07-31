@@ -467,7 +467,7 @@ body h1 {
 }
 
 #gallery .icon a {
-    font-size: 28px;
+    font-size: 36px;
     color: var(--textTwo);
     transition: all .2s ease;
     margin-right: 11%;

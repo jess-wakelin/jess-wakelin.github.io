@@ -285,6 +285,7 @@ function fillGallery() { //this fills each line with the number of images that a
     for (i = 0; i <= (lineTotal() - 1); i++) { //i need one less than line total because i started counting at 0 not 1
         let grid = document.getElementById("grid-" + i); //a line of images to be filled
         for (j = 0; j <= (imgPerLine() - 1); j++) {
+            if (num > imgCount() - 1) { break; } //breaks the loop if the last line is less full than previous lines, prevents out of bounds error
             current = grid.innerHTML; //get the contents of the line, add the below html to it and put both those things back in
             grid.innerHTML = current + "<div class=\"col\"><button id=\"img" + (num) + "\" onclick=\"addDescription(" + num + ", " + i + ")\"><img src=\"" + image[num].src + "\"  class=\"img-fluid\" alt=\"Responsive image\"><div class=\"middle\">" + image[num].title + "</div></button><div class=\"triangle-up\" id=\"tri" + num + "\"></div></div>";
             num++;//add one to the number of images done so that they are all done in the right order

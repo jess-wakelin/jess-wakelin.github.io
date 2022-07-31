@@ -16,7 +16,7 @@ This portfolio started as a university assignment but has bene maintained and up
         - make it a button somewhere?
     - ~~change titles to be bigger~~
     - redo portfolio pictures for better quality
-    - increase size of github icon in portfolio
+    - ~~increase size of github icon in portfolio~~
     
 1.  ~~nav accent with upscaled label is out of line on hamburger menu~~
     - ~~redo how the styles are altered in js so adding a check for hamburger is easier~~
