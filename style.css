@@ -508,7 +508,7 @@ body h1 {
 }
 
 #cv ul {
-    list-style-type: none;
+    list-style-type: circle;
     margin-left: -2rem;
 }
 

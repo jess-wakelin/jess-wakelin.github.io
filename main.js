@@ -165,35 +165,35 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
     {
         src: "images/Site.PNG",
         title: "This Site",
-        desc: "This site is a demonstration of all the web development skills I have thus far, it's useful for showcasing my skills, and getting to know me.<br> The site is made using vanilla HTML and JS and bootstrap CSS with various customisations",
+        desc: "This site itself is a demonstration of all the front-end development skills I have thus far, it's useful for showcasing my other skills and projects, and getting to know me. <br> The site is made using vanilla HTML and JS and bootstrap CSS with various customisations.",
         date: "April 2020, Updated July 2022",
         link: "https://www.github.com/20402182/Assignment2"
     },
     {
         src: "images/gameSite.png",
         title: "E-commerce site",
-        desc: "This project is a demonstration of a possible e-commerce site selling video games <br> Built by a team of 4, with me as project leader, from requirements analysis, through design, development and testing, using a PHP and mySQL backend, a HTML, SASS, JS frontend and PHPUnit testing <br> This site demonstrates the pinnacle of my fullstack web development abilities.",
+        desc: "This project demonstrates a concept e-commerce site selling video games. <br> Built by a team of 4, with me as project leader, from requirements analysis, through design, development and testing. <br> The site is built upon a PHP and mySQL backend, using a HTML, SASS, JS frontend and PHPUnit testing. <br> This site demonstrates the pinnacle of my full-stack web-development abilities.",
         date: "May 2021",
         link: ""
     },
     {
         src: "images/carRental.png",
         title: "Vehicle Rental Management",
-        desc: "This app was designed to manage a vehicle rental system. This project follows MVC architecture, implements desktop native GUI and utilises data serialisation, all using Java.",
+        desc: "This concept app was designed to manage a vehicle rental system. <br> This project follows MVC architecture, implements desktop native GUI and utilises data serialisation, all using Java.",
         date: "May 2021",
         link: ""
     },
     {
         src: "images/chatApp.png",
         title: "Chat app",
-        desc: "This app allows users to connect via IP address and send text-based messages, this can be done over TCP or UDP protocols, demonstrating an understanding of transport layer networking and interface design using C#.",
+        desc: "This app allows users to connect via IP address and send text-based messages, this can be done over TCP or UDP protocols. <br> This shows my understanding of transport layer networking and interface design using C#.",
         date: "January 2021",
         link: ""
     },
     {
         src: "images/blackjack.png",
         title: "Blackjack game",
-        desc: "This game was designed to work in a BASH command line, multiple players can bet arbitrary currency on a game of blackjack. This demonstrates a great understanding of BASH scripting.",
+        desc: "This game was designed to work in a BASH command line, multiple players can bet arbitrary currency on a game of blackjack. <br> This demonstrates my skills in BASH scripting and simple games development concepts.",
         date: "May 2021",
         link: ""
     },

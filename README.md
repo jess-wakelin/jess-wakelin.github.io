@@ -13,7 +13,7 @@ This portfolio started as a university assignment but has bene maintained and up
     - bigger socials means small ones are unnecessary
     - change dark mode to default
     - change switch to be more intuitive
-        - make it a button somewhere?
+        - make it a button somewhere? sun button next to logo?
     - ~~change titles to be bigger~~
     - redo portfolio pictures for better quality
     - ~~increase size of github icon in portfolio~~
@@ -27,6 +27,5 @@ This portfolio started as a university assignment but has bene maintained and up
     - clean up older code
 
 1. known bugs
-    - browsing portfolio starting with first one in a line is fine   
-    starting with 2nd or 3rd in a line means that the portfolio cannot be closed
-    - sometimes portfolio doesn't rearrange?
+    - browsing portfolio starting with first one in a line is fine starting with 2nd or 3rd in a line means that the portfolio cannot be closed
+    - ~~sometimes portfolio doesn't rearrange?~~ seems to be fixed, needs more testing
