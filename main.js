@@ -167,7 +167,7 @@ let image = [ //this is an array of objects to fill the portfolio, each one refe
         title: "This Site",
         desc: "This site itself is a demonstration of all the front-end development skills I have thus far, it's useful for showcasing my other skills and projects, and getting to know me. <br> The site is made using vanilla HTML and JS and bootstrap CSS with various customisations.",
         date: "April 2020, Updated July 2022",
-        link: "https://www.github.com/20402182/Assignment2"
+        link: "https://github.com/jess-wakelin/jess-wakelin.github.io"
     },
     {
         src: "images/gameSite.png",
