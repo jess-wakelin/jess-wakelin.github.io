@@ -670,7 +670,19 @@ body h1 {
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px),
+(max-height: 500px) {
+    #homeContainer h1 {
+        font-size: 4rem;
+        transform: translateY(calc((((100vh - 6rem) * .5) - 8rem)));
+    }
+
+    #homeContainer p {
+        font-size: 2rem;
+        transform: translateY(calc((((100vh - 6rem) * .5) - 8rem)));
+        margin: 0 3rem
+    }
+
     #footer button {
         margin-top: .5rem;
     }
